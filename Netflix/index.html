@@ -1,0 +1,69 @@
+<div class="netflix"></div>
+<!--Styling-->
+<style>
+body {
+
+  display: grid;
+
+  place-items: center;
+
+  background: black;
+
+  min-height: 100vh;
+
+}
+
+.netflix {
+
+  height: 15rem;
+
+  width: 3rem;
+
+  border-left: 3rem solid #e50914;
+
+  border-right: 3rem solid #e50914;
+
+  position: relative;
+
+}
+
+.netflix:before {
+
+  display: block;
+
+  content: "";
+
+  width: 100%;
+
+  height: 100%;
+
+  background: #e50914;
+
+  transform: skewX(21.5deg);
+
+  box-shadow: 0 0 30px black;
+
+}
+
+.netflix:after {
+
+  content: "";
+
+  width: 15rem;
+
+  height: 2rem;
+
+  background: black;
+
+  border-radius: 50%;
+
+  display: block;
+
+  position: absolute;
+
+  left: -200%;
+
+  top: 98%;
+
+}
+</style>
