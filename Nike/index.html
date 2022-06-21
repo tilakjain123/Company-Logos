@@ -1,0 +1,76 @@
+<div class="nike"></div>
+<!-- styling -->
+<style>
+  body {
+  display: grid;
+
+  place-items: center;
+
+  min-height: 100vh;
+}
+.nike {
+
+  position: absolute;
+
+  overflow: hidden;
+
+  width: 50vmin;
+
+  aspect-ratio: 14/5;
+
+  position: relative;
+
+}
+
+.nike:before, .nike:after {
+
+  content: "";
+
+  position: absolute;
+
+}
+
+.nike:before {
+
+  background: black;
+
+  width: 37%;
+
+  height: 550%;
+
+  bottom: -134%;
+
+  left: 70.5%;
+
+  border-top-left-radius: 48% 17%;
+
+  border-top-right-radius: 120% 40%;
+
+  transform: rotate(-113deg);
+
+  z-index: 1;
+
+}
+
+.nike:after {
+
+  background: white;
+
+  width: 30%;
+
+  height: 400%;
+
+  bottom: -73%;
+
+  left: 64%;
+
+  border-top-left-radius: 64% 14%;
+
+  border-top-right-radius: 125% 46%;
+
+  transform: rotate(-105deg);
+
+  z-index: 2;
+
+}
+  </style>
