@@ -1,0 +1,47 @@
+:root {
+  --height: 85px;
+  --width: 80px;
+}
+/*centering logo*/
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+/*Main css*/
+.youtube {
+  position: relative;
+  width: var(--width);
+  height: var(--height);
+  background-color: red;
+  padding: 0 15px;
+  border-radius: 50% / 11%;
+}
+
+.youtube::before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  top: 10%;
+  bottom: 10%;
+  right: -5%;
+  left: -4.5%;
+  border-radius: 5% / 50%;
+}
+.arrow {
+  width: 100%;
+  height: var(--height);
+  display: grid;
+  place-items: center;
+  margin-left: 3px;
+}
+.arrow::before {
+  content: "";
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border-left: 25px solid #fff;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
